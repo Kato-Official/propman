@@ -47,18 +47,17 @@ body:
     validations:
       required: true
 
-  - type: radios
+  - type: dropdown
     id: environment
     attributes:
       label: Environment
       description: "Select the environment where the issue occurred."
       options:
-        - label: "Android"
-          value: "Android"
-        - label: "iOS"
-          value: "iOS"
+        - "Android"
+        - "iOS"
     validations:
       required: true
+
 
 
   - type: checkboxes
