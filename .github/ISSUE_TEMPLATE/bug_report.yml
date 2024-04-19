@@ -6,7 +6,7 @@ assignees: []
 body:
   - type: markdown
     attributes:
-      value: "Thank you for taking the time to report a bug. Before submitting this report, please fill out necessary details as described below. Please note: if you wish to add screenshots or screen video recording (as it's advised to do so), you can do that after having successfully opened the ticket, by simply commenting on the same ticket (You will find the universal paperclip icon to upload the file you wish to upload)."
+      value: "Thanks for helping us squash bugs! Please fill out the details below. Note: After submitting, you can add screenshots or video recordings by commenting on the ticket. Just look for the paperclip icon to upload your files."
 
   - type: checkboxes
     id: pre-check
@@ -47,13 +47,19 @@ body:
     validations:
       required: true
 
-  - type: textarea
+  - type: radios
     id: environment
     attributes:
       label: Environment
-      description: "Details about your environment."
-      placeholder: "Android or iOS."
-      render: markdown
+      description: "Select the environment where the issue occurred."
+      options:
+        - label: "Android"
+          value: "Android"
+        - label: "iOS"
+          value: "iOS"
+    validations:
+      required: true
+
 
   - type: checkboxes
     id: final-check
