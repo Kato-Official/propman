@@ -6,17 +6,15 @@ assignees: []
 body:
   - type: markdown
     attributes:
-      value: "Thank you for taking the time to report a bug. Before submitting this report, please fill out necessary details as described below."
+      value: "Thank you for taking the time to report a bug. Before submitting this report, please fill out necessary details as described below. Please note: if you wish to add screenshots or screen video recording (as it's advised to do so), you can do that after having successfully opened the ticket, by simply commenting on the same ticket (You will find the universal paperclip icon to upload the file you wish to upload)."
 
   - type: checkboxes
     id: pre-check
     attributes:
       label: Preliminary checklist
-      description: Please confirm the following items before you submit the issue.
+      description: Please confirm the following item before you submit the issue.
       options:
         - label: "I have searched the existing issues and confirm this issue has not been reported before."
-          required: true
-        - label: "I give permission for members of the PropMan team to access and test my project for the sole purpose of investigating this issue."
           required: true
 
   - type: textarea
@@ -44,7 +42,7 @@ body:
     attributes:
       label: Steps to Reproduce
       description: "Provide detailed steps to reproduce the issue."
-      placeholder: "1. Go to '...'\n2. Click on '....'\n3. Scroll down to '....'\n4. See error"
+      placeholder: "1. Signed up with Google '...'\n2. Tapped on '....'\n3. Scroll down to '....'\n4. See error"
       render: markdown
     validations:
       required: true
@@ -54,23 +52,17 @@ body:
     attributes:
       label: Environment
       description: "Details about your environment."
-      placeholder: "PropMan version, Platform, Browser and version, Operating system and version..."
+      placeholder: "Android or iOS."
       render: markdown
 
-  - type: textarea
-    id: additional-context
+  - type: checkboxes
+    id: final-check
     attributes:
-      label: Additional Context and Visual Documentation
-      description: "Any extra information that might help us resolve the issue, like screenshots or a video."
-      placeholder: "Add context here..."
-      render: markdown
+      label: Final check
+      description: Please confirm the following item before you submit the issue.
+      options:
+        - label: "I have searched again through the existing issues and confirm that this issue has not been reported before."
+          required: true
+        - label: "I understand that to upload screenshots, I simply need to attach them by commenting on this issue after it has been opened."
+          required: true
 
-  - type: textarea
-    id: bug-report-code
-    attributes:
-      label: Bug Report Code (Required)
-      description: "Generate by right-clicking inside Widget Tree and selecting 'Get Bug Report Code'."
-      placeholder: "Paste your bug report code here..."
-      render: markdown
-    validations:
-      required: true
