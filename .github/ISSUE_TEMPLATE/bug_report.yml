@@ -1,0 +1,76 @@
+name: 🐛 Bug Report
+description: Use this form to report a reproducible bug or regression in PropMan.
+title: "[BUG] "
+labels: ["bug", "needs triage"]
+assignees: ''
+body:
+  - type: markdown
+    attributes:
+      value: "Thank you for taking the time to report a bug. Before submitting this report, please fill out necessary details as described below."
+
+  - type: checkboxes
+    id: pre-check
+    attributes:
+      label: Preliminary checklist
+      description: Please confirm the following items before you submit the issue.
+      options:
+        - label: "I have searched the existing issues and confirm this issue has not been reported before."
+          required: true
+        - label: "I give permission for members of the PropMan team to access and test my project for the sole purpose of investigating this issue."
+          required: true
+
+  - type: textarea
+    id: current-behavior
+    attributes:
+      label: Current Behavior
+      description: "A concise description of what you're experiencing."
+      placeholder: "Describe the bug..."
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: "A concise description of what you expected to happen."
+      placeholder: "What did you expect to happen?"
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: "Provide detailed steps to reproduce the issue."
+      placeholder: "1. Go to '...'\n2. Click on '....'\n3. Scroll down to '....'\n4. See error"
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: "Details about your environment."
+      placeholder: "PropMan version, Platform, Browser and version, Operating system and version..."
+      render: markdown
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context and Visual Documentation
+      description: "Any extra information that might help us resolve the issue, like screenshots or a video."
+      placeholder: "Add context here..."
+      render: markdown
+
+  - type: textarea
+    id: bug-report-code
+    attributes:
+      label: Bug Report Code (Required)
+      description: "Generate by right-clicking inside Widget Tree and selecting 'Get Bug Report Code'."
+      placeholder: "Paste your bug report code here..."
+      render: markdown
+    validations:
+      required: true
