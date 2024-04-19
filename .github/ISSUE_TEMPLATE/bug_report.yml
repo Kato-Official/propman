@@ -2,7 +2,7 @@ name: 🐛 Bug Report
 description: Use this form to report a reproducible bug or regression in PropMan.
 title: "[BUG] "
 labels: ["bug", "needs triage"]
-assignees: ''
+assignees: []
 body:
   - type: markdown
     attributes:
