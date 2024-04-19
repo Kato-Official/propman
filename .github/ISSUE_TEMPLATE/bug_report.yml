@@ -58,16 +58,17 @@ body:
     validations:
       required: true
 
-
-
   - type: checkboxes
     id: final-check
     attributes:
       label: Final check
       description: Please confirm the following item before you submit the issue.
       options:
-        - label: "I have searched again through the existing issues and confirm that this issue has not been reported before."
+        - label: "I have carefully provided all necessary details and avoided using any placeholders or dummy content just to open the ticket."
+          required: true
+        - label: "I understand that submitting dummy or placeholder content will result in the automatic closure of the ticket."
           required: true
         - label: "I understand that to upload screenshots, I simply need to attach them by commenting on this issue after it has been opened."
           required: true
+
 
